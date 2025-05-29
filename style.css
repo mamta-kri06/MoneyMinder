@@ -1,0 +1,109 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar.scrolled {
+  background-color: white !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #2e7d32 !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-brand img {
+  height: 35px;
+}
+.nav-link {
+  color: #2e7d32 !important;
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: #81c784 !important;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: white;
+  padding: 100px 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero img {
+  max-width: 300px;
+  margin-top: 40px;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.15));
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #2e7d32;
+  color: #d4edda;
+  padding: 20px 0;
+  text-align: center;
+}
+footer a {
+  color: #a5d6a7;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
+footer a:hover {
+  color: #c8e6c9;
+}
+
+/* Floating Action Button */
+.fab {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 56px;
+  height: 56px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #4caf50;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.fab:hover {
+  background-color: #388e3c;
+  text-decoration: none;
+  color: white;
+}
