@@ -3,7 +3,7 @@
 
 A responsive expense tracker using HTML, CSS , JS and Bootstrap. It lets you add, view, and delete your expenses and show your expenses visually using chart.
 
-🔗 [Live Demo]((https://mamta-kri06.github.io/MoneyMinder/))
+https://mamta-kri06.github.io/MoneyMinder/
 
 ## Features
 - Add/Delete expenses
